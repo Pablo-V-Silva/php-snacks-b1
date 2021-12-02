@@ -1,7 +1,7 @@
 <?php
 $name= $_GET['name'];
-$mail= '';
-$age= '';
+$mail= $_GET['mail'];
+$age= $_GET['age'];
 var_dump($name);
 ?>
 
@@ -18,9 +18,15 @@ var_dump($name);
   <div>
     <h1>Accesso:</h1>
     <?php if (strlen($name) >= 3): ?>
-      <p>Riuscito</p>
+      <p>Nome => Riuscito</p>
     <?php else: ?>
-      <p>Non Riuscito</p>
+      <p>Nome => Non Riuscito</p>
+    <?php endif ?>
+    <?php if ($age > 0): ?>
+      <p>Età => Riuscito</p>
+    <?php else: ?>
+      <p>
+        Età => Non Riuscito</p>
     <?php endif ?>
 
    
