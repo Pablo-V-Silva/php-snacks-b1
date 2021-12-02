@@ -4,10 +4,10 @@ $prima_partita=['casa'=> 'Milano',
  'punti_casa'=>'55', 
  'punti_ospite'=> '60'];
 
- $seconda_partita=['casa'=> 'Milano',
- 'ospite'=> 'Cantù', 
- 'punti_casa'=>'55', 
- 'punti_ospite'=> '60'];
+ $seconda_partita=['casa'=> 'Cantù',
+ 'ospite'=> 'Milano', 
+ 'punti_casa'=>'30', 
+ 'punti_ospite'=> '70'];
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +22,9 @@ $prima_partita=['casa'=> 'Milano',
 
 <h1>Partite Andata e Ritorno</h1>
 <h2>Andata</h2>
-  <p></p>
+  <p><?= $prima_partita['casa'].' - '.$prima_partita[ospite].' | '.$prima_partita['punti_casa'].' - '.$prima_partita['punti_ospite']?></p>
   <h2>Ritorno</h2>
-  <p></p>
+    <p><?= $seconda_partita['casa'].' - '.$seconda_partita[ospite].' | '.$seconda_partita['punti_casa'].' - '.$seconda_partita['punti_ospite']?></p>
+
 </body>
 </html>
