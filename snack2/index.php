@@ -4,6 +4,7 @@ $mail= $_GET[$mail];
 $age= $_GET[$age];
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +16,13 @@ $age= $_GET[$age];
 <body>
   <div>
     <h1>Accesso:</h1>
-    <?=
-    if (strlen($name) > 3) {
-      # code...
-<p>Riuscito</p>
-}?>
+    <?php if (strlen($name) >= 3): ?>
+      <p>Riuscito</p>
+    <?php else: ?>
+      <p>Non Riuscito</p>
+    <?php endif ?>
+
+   
   </div>
 </body>
 </html>
