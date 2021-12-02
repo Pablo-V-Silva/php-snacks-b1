@@ -22,9 +22,23 @@ $prima_partita=['casa'=> 'Milano',
 
 <h1>Partite Andata e Ritorno</h1>
 <h2>Andata</h2>
-  <p><?= $prima_partita['casa'].' - '.$prima_partita[ospite].' | '.$prima_partita['punti_casa'].' - '.$prima_partita['punti_ospite']?></p>
+    <?php
+for ($i=0; $i < 1; $i++) { 
+  # code...
+  ?>
+  <p><?=$prima_partita['casa'].' - '.$prima_partita[ospite].' | '.$prima_partita['punti_casa'].' - '.$prima_partita['punti_ospite']?></p>
+  
+<?php } ?>
   <h2>Ritorno</h2>
-    <p><?= $seconda_partita['casa'].' - '.$seconda_partita[ospite].' | '.$seconda_partita['punti_casa'].' - '.$seconda_partita['punti_ospite']?></p>
+  <?php
+for ($i=0; $i < 1; $i++) { 
+  # code...
+  ?>
+  <p><?=$seconda_partita['casa'].' - '.$seconda_partita[ospite].' | '.$seconda_partita['punti_casa'].' - '.$seconda_partita['punti_ospite']?></p>
+  
+<?php } ?>
+<div>
 
+</div>
 </body>
 </html>
