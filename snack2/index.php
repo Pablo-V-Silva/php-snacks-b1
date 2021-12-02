@@ -1,7 +1,9 @@
 <?php
-$name= $_GET[$name];
-$mail= $_GET[$mail];
-$age= $_GET[$age];
+$name= 'mario';
+$mail= '';
+$age= '';
+$check = $_GET[$name];
+var_dump($check);
 ?>
 
 
