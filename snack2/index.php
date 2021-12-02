@@ -17,16 +17,10 @@ var_dump($name);
 <body>
   <div>
     <h1>Accesso:</h1>
-    <?php if (strlen($name) >= 3): ?>
-      <p>Nome => Riuscito</p>
+    <?php if (strlen($name) >= 3 && $age > 0): ?>
+      <p>Riuscito</p>
     <?php else: ?>
-      <p>Nome => Non Riuscito</p>
-    <?php endif ?>
-    <?php if ($age > 0): ?>
-      <p>Età => Riuscito</p>
-    <?php else: ?>
-      <p>
-        Età => Non Riuscito</p>
+      <p>Non Riuscito</p>
     <?php endif ?>
 
    
