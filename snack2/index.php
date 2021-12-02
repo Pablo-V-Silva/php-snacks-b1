@@ -17,7 +17,7 @@ var_dump($name);
 <body>
   <div>
     <h1>Accesso:</h1>
-    <?php if (strlen($name) >= 3 && $age > 0): ?>
+    <?php if (strlen($name) >= 3 && $age > 0 && strpos($mail, '@')): ?>
       <p>Riuscito</p>
     <?php else: ?>
       <p>Non Riuscito</p>
